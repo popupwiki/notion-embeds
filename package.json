@@ -1,0 +1,44 @@
+{
+  "name": "bun-nextjs-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "tsc -b && next build",
+    "start": "next start",
+    "prepare": "husky",
+    "types:check": "tsc",
+    "lint-staged": "lint-staged",
+    "lint:check": "eslint",
+    "lint:fix": "eslint --fix",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "unused:check": "knip",
+    "check-light": "bun types:check && bun lint:check && bun format:check",
+    "check-all": "bun check-light && bun unused:check && bun test --coverage",
+    "fix-all": "bun lint:fix && bun format:fix"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.15"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.11",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@woohm402/eslint-config-react": "^0.7.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "8.57.1",
+    "husky": "^9.1.6",
+    "knip": "^5.33.3",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
