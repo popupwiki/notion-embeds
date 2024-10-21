@@ -1,16 +1,9 @@
-import Script from 'next/script';
+import { WeatherScript } from '@/app/embeds/weather/weatherwidget-script';
 
-const WeatherWidget = () => {
+const SeongsuWeatherWidget = () => {
   return (
     <>
-      {/** Load the weather widget script after the page is interactive */}
-      <Script
-        id="weatherwidget-io-js"
-        src="https://weatherwidget.io/js/widget.min.js"
-        strategy="afterInteractive"
-      />
-
-      {/** Weather widget embed */}
+      <WeatherScript />
       <a
         className="weatherwidget-io"
         href="https://forecast7.com/en/37d54127d04/seongsu-dong-1il-ga/"
@@ -25,4 +18,4 @@ const WeatherWidget = () => {
   );
 };
 
-export default WeatherWidget;
+export default SeongsuWeatherWidget;
