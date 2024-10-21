@@ -6,7 +6,7 @@ const SeongsuWeatherWidget = () => {
       <WeatherScript />
       <a
         className="weatherwidget-io"
-        href="https://forecast7.com/en/37d54127d04/seongsu-dong-1il-ga/"
+        href="https://www.kr-weathernews.com/mv4/html/today.html?loc=1120011400"
         data-label_1="성수/서울숲"
         data-label_2="날씨"
         data-icons="Climacons Animated"
