@@ -1,10 +1,10 @@
 {
   "name": "bun-nextjs-template",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "tsc -b && next build",
     "start": "next start",
     "types:check": "tsc",
@@ -18,16 +18,16 @@
     "fix-all": "bun lint:fix && bun format:fix"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.15"
+    "next": "15.0.0",
+    "react": "19.0.0-rc-65a56d0e-20241020",
+    "react-dom": "19.0.0-rc-65a56d0e-20241020"
   },
   "devDependencies": {
     "@types/bun": "^1.1.11",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@woohm402/eslint-config-react": "^0.7.1",
+    "@woohm402/eslint-config-react": "^0.8.0",
     "autoprefixer": "^10.4.20",
     "eslint": "8.57.1",
     "knip": "^5.33.3",
