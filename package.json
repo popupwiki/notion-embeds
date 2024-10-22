@@ -20,7 +20,8 @@
   "dependencies": {
     "next": "15.0.0",
     "react": "19.0.0-rc-65a56d0e-20241020",
-    "react-dom": "19.0.0-rc-65a56d0e-20241020"
+    "react-dom": "19.0.0-rc-65a56d0e-20241020",
+    "react-naver-maps": "^0.1.3"
   },
   "devDependencies": {
     "@types/bun": "^1.1.11",
