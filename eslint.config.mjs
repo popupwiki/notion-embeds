@@ -2,12 +2,7 @@ import react from '@woohm402/eslint-config-react';
 
 export default [
   {
-    ignores: [
-      'dist',
-      'eslint.config.js',
-      'postcss.config.mjs',
-      '.lintstagedrc.mjs',
-    ],
+    ignores: ['eslint.config.mjs', 'postcss.config.mjs'],
     extends: ['next/core-web-vitals', 'next/typescript'],
   },
   ...react({
